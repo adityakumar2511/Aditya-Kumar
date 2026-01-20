@@ -5,9 +5,10 @@ import ResumePDF from "../assets/AdityaCV.pdf";
 import profileImage from "../assets/myimg.jpg";
 const Hero = () => {
   const roles = [
-    "Software Developer",
     "Frontend Developer",
     "WordPress Developer",
+    "Software Developer",
+    "Full Stack Developer",
     "Shopify Developer",
     "MERN Stack Developer",
   ];

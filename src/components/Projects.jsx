@@ -2,7 +2,10 @@ import React from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import madhuRekhaBillingSoftwareImg from "../assets/ProjectsImg/madhuRekhaBillingSoftware.png";
+import skyproImg from "../assets/ProjectsImg/skypro.png";
+import CSSCPImg from "../assets/ProjectsImg/csscp.png";
+import bebeyondLandingPageImg from "../assets/ProjectsImg/bebeyondLandingPage.png";
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -24,27 +27,54 @@ const cardVariants = {
 
 const Projects = () => {
   const projects = [
+    // Madhu Rekha Billing Software Project
     {
-      title: "E-Commerce Platform",
-      category: "Web Application",
-      image: "https://picsum.photos/seed/proj1/800/600",
+      category: "Mern Stack",
+      title: "Madhu Rekha Billing Software",
+      image: madhuRekhaBillingSoftwareImg,
       description:
-        "A full-scale online store with real-time inventory management.",
+        "Madhu Rekha Billing Software is a responsive web-based billing and invoicing application built with modern frontend technologies. It allows users to generate invoices, manage billing items, and track customer details efficiently. Designed with an intuitive user interface, the app improves billing accuracy and workflow speed. The project is deployed on Vercel for fast performance and seamless access across devices.",
+      // techStack: ["React", "Vite", "Tailwind", "Node", "Express", "Firebase", "SheetIntegration"],
+      github: "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
+      live: "https://madhu-rekha-billing-software-fronte.vercel.app/",
     },
+
+    // SkyPro Aviation Website Project
     {
-      title: "Finance Tracker",
-      category: "Fintech",
-      image: "https://picsum.photos/seed/proj2/800/600",
+      category: "WordPress",
+      title: "SkyPro Aviation Website",
+      image: skyproImg,
       description:
-        "Intuitive dashboard for monitoring personal and business finances.",
+        "SkyPro Aviation Website is a professional aviation training academy site that highlights pilot training programs, DGCA ground classes, license conversion services, and aviation guidance. The responsive layout and structured menus help visitors explore courses, learn about the institute, and contact the academy easily to start pilot career preparation.",
+      // techStack: ["WordPress", "Elementor", "Contact Form 7", "HTML", "CSS"],
+      //github: "#",
+      live: "https://skyproaviation.org/",
     },
+
+    //CSSCP Website Project
     {
-      title: "Social Connect",
-      category: "Mobile App",
-      image: "https://picsum.photos/seed/proj3/800/600",
+      category: "WordPress",
+      title: "CSSCP Website",
+      image: CSSCPImg,
       description:
-        "Modern social media interface with real-time messaging.",
+        "Chandra Shekhar Singh College of Pharmacy Website is an educational institution site that showcases academic programs, campus information, and admission details for pharmacy courses. Built with a structured layout, it provides clear navigation for visitors to explore courses, faculty, facilities, and contact information.",
+      techStack: ["WordPress", "Elementor", "WP Forms", "ACF", "HTML", "CSS"],
+      //github: "#",
+      live: "https://csscp.in/",
     },
+
+    // BeBeyond Digital Shopify Landing Page Project
+    {
+      category: "Landing Page",
+      title: "BeBeyond Digital Solutions",
+      image: bebeyondLandingPageImg,
+      description:
+        "BeBeyond Digital Shopify Landing Page is a modern, responsive landing page designed to promote Shopify services. It showcases core offerings, client solutions, and calls-to-action with a clean layout and engaging visuals. The page guides visitors through value propositions and encourages lead generation with clear buttons and structured content.",
+      //techStack: ["React", "vite", "Tailwind CSS", "Framer Motion", "SheetIntegration"],
+      //github: "#",
+      live: "https://shopify.bebeyond.digital/",
+    },
+
   ];
 
   return (
@@ -83,7 +113,7 @@ const Projects = () => {
 
       {/* Projects Grid */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8"
         variants={containerVariants}
       >
         {projects.map((project, index) => (
@@ -97,7 +127,7 @@ const Projects = () => {
             className="group relative overflow-hidden rounded-2xl bg-[#161b22] border border-gray-800 transition-all"
           >
             {/* Image */}
-            <div className="aspect-[4/3] overflow-hidden relative">
+            <div className="w-full h-[300px] overflow-hidden relative">
               <motion.img
                 src={project.image}
                 alt={project.title}
@@ -112,22 +142,35 @@ const Projects = () => {
                 whileHover={{ opacity: 1 }}
                 className="absolute inset-0 bg-black/60 flex items-center justify-center gap-4"
               >
-                <motion.button
-                  whileHover={{ scale: 1.15 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="p-3 bg-orange-600 rounded-full text-white hover:bg-orange-700 transition-colors"
-                >
-                  <Github size={20} />
-                </motion.button>
+                {/* Github Button — sirf tab dikhe jab link ho */}
+                {project.github && project.github !== "#" && (
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.15 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="p-3 bg-orange-600 rounded-full text-white hover:bg-orange-700 transition-colors"
+                  >
+                    <Github size={20} />
+                  </motion.a>
+                )}
 
-                <motion.button
-                  whileHover={{ scale: 1.15 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="p-3 bg-white rounded-full text-black hover:bg-gray-200 transition-colors"
-                >
-                  <ExternalLink size={20} />
-                </motion.button>
+                {/* Live Button — sirf tab dikhe jab link ho */}
+                {project.live && project.live !== "#" && (
+                  <motion.a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.15 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="p-3 bg-white rounded-full text-black hover:bg-gray-200 transition-colors"
+                  >
+                    <ExternalLink size={20} />
+                  </motion.a>
+                )}
               </motion.div>
+
             </div>
 
             {/* Content */}
