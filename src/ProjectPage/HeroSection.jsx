@@ -93,7 +93,7 @@ const HeroSection = () => {
           {[
             {
               icon: <Code className="text-orange-500" size={24} />,
-              value: "50+",
+              value: "12+",
               label: "Projects Completed",
             },
             {
@@ -103,7 +103,7 @@ const HeroSection = () => {
             },
             {
               icon: <Globe className="text-blue-500" size={24} />,
-              value: "100%",
+              value: "90%",
               label: "Client Satisfaction",
             },
           ].map((stat, i) => (
