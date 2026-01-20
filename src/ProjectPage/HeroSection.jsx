@@ -98,7 +98,7 @@ const HeroSection = () => {
             },
             {
               icon: <Layers className="text-purple-500" size={24} />,
-              value: "10+",
+              value: "15+",
               label: "Technologies",
             },
             {
