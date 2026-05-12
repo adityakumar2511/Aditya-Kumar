@@ -17,6 +17,7 @@ import emsImg from "../assets/ProjectsImg/ems.png";
 import ubermsImg from "../assets/ProjectsImg/uberms.png";
 import royalRajasthanWeddingImg from "../assets/ProjectsImg/royalRajasthanWedding.png";
 import provolPromotionsImg from "../assets/ProjectsImg/provolPromotions.png";
+import serviceManagementImg from "../assets/ProjectsImg/serviceManagement.png";
 
 const projectsData = [
 
@@ -27,7 +28,7 @@ const projectsData = [
     title: "Employee Management System",
     image: emsImg,
     description: "EMS Pro is an enterprise-grade Employee Management System built with the MERN Stack. It features GPS-based geofenced attendance tracking, dynamic salary builder with auto LOP calculation, leave management with approval workflow, task assignment, real-time Firebase dashboard, and PDF/Excel report generation. Separate role-based dashboards for Admin and Employee with PWA support. Demo credentials available in the Frontend GitHub Repository README File.",
-    techStack: ["React.js", "Next.js", "Node.js", "Express", "PostgreSQL", "Firebase", "Tailwind", "Framer Motion", "Vercel"],
+    techStack: ["React.js", "Next.js", "Node.js", "Express", "PostgreSQL", "Firebase", "Tailwind", "Framer Motion", "Vercel", "Render"],
     github: "https://github.com/adityakumar2511/Employee-Management-System-Frontend",
     github2: "https://github.com/adityakumar2511/Employee-Management-System-Backend",
     live: "https://employee-management-system-2511.vercel.app/",
@@ -40,12 +41,25 @@ const projectsData = [
     image: madhuRekhaBillingSoftwareImg,
     description:
       "Madhu Rekha Billing Software is a responsive web-based billing and invoicing application built with modern frontend technologies. It allows users to generate invoices, manage billing items, and track customer details efficiently. Designed with an intuitive user interface, the app improves billing accuracy and workflow speed. The project is deployed on Vercel for fast performance and seamless access across devices.",
-    techStack: ["React", "Vite", "Tailwind", "Node", "Express", "Firebase", "SheetIntegration"],
+    techStack: ["React", "Vite", "Tailwind", "Node", "Express", "Firebase", "SheetIntegration", "Vercel", "Render"],
     github: "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
     github2: "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
     live: "https://madhu-rekha-billing-software-fronte.vercel.app/",
   },
 
+  {
+    category: "Full Stack",
+    title: "Service Management System",
+    image: serviceManagementImg,
+    description:
+      "Service Management System is a full-stack web application for CA firms to manage employee skills, services, learning resources, and team collaboration. Built with React, Node.js, Express, PostgreSQL, and Firebase, it features secure authentication, role-based dashboards, protected APIs, and a responsive UI.",
+
+    techStack: ["React.js", "Vite", "Node.js", "Express.js", "PostgreSQL", "Firebase Authentication", "Tailwind CSS", "Cloudinary", "Neon DB", "Axios", "React Router", "Vercel", "Render"
+    ],
+
+    github: "https://github.com/adityakumar2511/Service-Management-System",
+    live: "https://service-management-system-seven.vercel.app/"
+  },
 
   // SkyPro Aviation Website Project
   {
@@ -107,7 +121,7 @@ const projectsData = [
     github: "#",
     live: "https://shopify.bebeyond.digital/",
   },
-  
+
   // Agarwal Bag House Project
   {
     category: "WordPress",
@@ -132,7 +146,7 @@ const projectsData = [
     live: "https://hiprobags.com/",
   },
 
-  
+
 
   // IBrand Solutions Project
   {

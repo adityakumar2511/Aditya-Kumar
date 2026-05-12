@@ -1,16 +1,85 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project showcases:
 
-## React Compiler
+- Responsive hero, about, skills, experience, projects, and contact sections
+- Animated UI using `framer-motion`
+- Project detail pages with routing via `react-router-dom`
+- Contact form integration using `emailjs-com`
+- Custom fonts from `@fontsource`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
+- EmailJS
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project structure
+
+- `public/` — static public files
+- `src/`
+  - `assets/`
+    - `ProjectsImg/`
+  - `components/`
+    - `About.jsx`
+    - `Contact.jsx`
+    - `Experience.jsx`
+    - `Footer.jsx`
+    - `GithubStats.jsx`
+    - `Header.jsx`
+    - `Hero.jsx`
+    - `Projects.jsx`
+    - `Separator.jsx`
+    - `Skills.jsx`
+    - `TechStack.jsx`
+  - `ProjectPage/`
+    - `HeroSection.jsx`
+    - `index.jsx`
+    - `Projects.jsx`
+    - `projectsData.js`
+  - `App.css`
+  - `App.jsx`
+  - `index.css`
+  - `main.jsx`
+- `eslint.config.js`
+- `package.json`
+- `tailwind.config.js`
+- `vite.config.js`
+
+## Notes
+
+This repository is intended as a portfolio presentation site. Customize the content, projects, and styling to match your personal brand.
