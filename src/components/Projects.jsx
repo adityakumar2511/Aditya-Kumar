@@ -6,6 +6,7 @@ import madhuRekhaBillingSoftwareImg from "../assets/ProjectsImg/madhuRekhaBillin
 import skyproImg from "../assets/ProjectsImg/skypro.png";
 import CSSCPImg from "../assets/ProjectsImg/csscp.png";
 import bebeyondLandingPageImg from "../assets/ProjectsImg/bebeyondLandingPage.png";
+import emsImg from "../assets/ProjectsImg/ems.png";
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -29,39 +30,49 @@ const Projects = () => {
   const projects = [
     // Madhu Rekha Billing Software Project
     {
-      category: "Mern Stack",
+      category: "Full Stack",
       title: "Madhu Rekha Billing Software",
       image: madhuRekhaBillingSoftwareImg,
       description:
         "Madhu Rekha Billing Software is a responsive web-based billing and invoicing application built with modern frontend technologies. It allows users to generate invoices, manage billing items, and track customer details efficiently. Designed with an intuitive user interface, the app improves billing accuracy and workflow speed. The project is deployed on Vercel for fast performance and seamless access across devices.",
-      // techStack: ["React", "Vite", "Tailwind", "Node", "Express", "Firebase", "SheetIntegration"],
-      github: "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
+      github:
+        "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
       live: "https://madhu-rekha-billing-software-fronte.vercel.app/",
+    },
+
+    // Employee Management System Project
+    {
+      category: "Full Stack",
+      title: "Employee Management System",
+      image: emsImg,
+      description:
+        "Employee Management System (EMS) is a responsive web-based application designed to manage employee records, attendance, roles, and organizational workflows efficiently. The platform provides secure authentication, employee data management, and an intuitive dashboard for administrators and employees. Built with modern frontend and backend technologies, the system improves productivity, simplifies HR operations, and ensures seamless access across devices.",
+      github: "https://github.com/adityakumar2511/Employee-Management-System-Frontend",
+      live: "https://your-ems-project.vercel.app/",
     },
 
     // SkyPro Aviation Website Project
     {
-      category: "WordPress",
+      category: "Full Stack + WordPress",
       title: "SkyPro Aviation Website",
       image: skyproImg,
       description:
         "SkyPro Aviation Website is a professional aviation training academy site that highlights pilot training programs, DGCA ground classes, license conversion services, and aviation guidance. The responsive layout and structured menus help visitors explore courses, learn about the institute, and contact the academy easily to start pilot career preparation.",
-      // techStack: ["WordPress", "Elementor", "Contact Form 7", "HTML", "CSS"],
-      //github: "#",
       live: "https://skyproaviation.org/",
     },
 
-    //CSSCP Website Project
-    {
-      category: "WordPress",
-      title: "CSSCP Website",
-      image: CSSCPImg,
-      description:
-        "Chandra Shekhar Singh College of Pharmacy Website is an educational institution site that showcases academic programs, campus information, and admission details for pharmacy courses. Built with a structured layout, it provides clear navigation for visitors to explore courses, faculty, facilities, and contact information.",
-      techStack: ["WordPress", "Elementor", "WP Forms", "ACF", "HTML", "CSS"],
-      //github: "#",
-      live: "https://csscp.in/",
-    },
+     //CSSCP Website Project
+    // {
+    //   category: "WordPress",
+    //   title: "CSSCP Website",
+    //   image: CSSCPImg,
+    //   description:
+    //     "Chandra Shekhar Singh College of Pharmacy Website is an educational institution site that showcases academic programs, campus information, and admission details for pharmacy courses. Built with a structured layout, it provides clear navigation for visitors to explore courses, faculty, facilities, and contact information.",
+    //   techStack: ["WordPress", "Elementor", "WP Forms", "ACF", "HTML", "CSS"],
+    //   //github: "#",
+    //   live: "https://csscp.in/",
+    // },
+
 
     // BeBeyond Digital Shopify Landing Page Project
     {
@@ -70,11 +81,8 @@ const Projects = () => {
       image: bebeyondLandingPageImg,
       description:
         "BeBeyond Digital Shopify Landing Page is a modern, responsive landing page designed to promote Shopify services. It showcases core offerings, client solutions, and calls-to-action with a clean layout and engaging visuals. The page guides visitors through value propositions and encourages lead generation with clear buttons and structured content.",
-      //techStack: ["React", "vite", "Tailwind CSS", "Framer Motion", "SheetIntegration"],
-      //github: "#",
       live: "https://shopify.bebeyond.digital/",
     },
-
   ];
 
   return (
@@ -142,7 +150,6 @@ const Projects = () => {
                 whileHover={{ opacity: 1 }}
                 className="absolute inset-0 bg-black/60 flex items-center justify-center gap-4"
               >
-                {/* Github Button — sirf tab dikhe jab link ho */}
                 {project.github && project.github !== "#" && (
                   <motion.a
                     href={project.github}
@@ -156,7 +163,6 @@ const Projects = () => {
                   </motion.a>
                 )}
 
-                {/* Live Button — sirf tab dikhe jab link ho */}
                 {project.live && project.live !== "#" && (
                   <motion.a
                     href={project.live}
@@ -170,7 +176,6 @@ const Projects = () => {
                   </motion.a>
                 )}
               </motion.div>
-
             </div>
 
             {/* Content */}
@@ -183,15 +188,28 @@ const Projects = () => {
               <span className="text-xs uppercase tracking-widest text-orange-500 font-bold">
                 {project.category}
               </span>
-              <h3 className="text-xl font-bold text-white">
-                {project.title}
-              </h3>
+              <h3 className="text-xl font-bold text-white">{project.title}</h3>
               <p className="text-gray-400 text-sm line-clamp-2">
                 {project.description}
               </p>
             </motion.div>
           </motion.div>
         ))}
+      </motion.div>
+
+      {/* View More Button */}
+      <motion.div
+        className="flex justify-center mt-12"
+        variants={cardVariants}
+      >
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link
+            to="/projects"
+            className="px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-lg"
+          >
+            View More Projects →
+          </Link>
+        </motion.div>
       </motion.div>
     </motion.div>
   );

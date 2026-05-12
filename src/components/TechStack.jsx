@@ -5,11 +5,11 @@ const TechStack = () => {
     "HTML5",
     "CSS",
     "Javascript",
-    "Node.js",
+    "NodeJs",
     "React",
     "Git",
     "Github",
-    "Python",
+    "ExpressJs",
     "Tailwind",
   ];
 

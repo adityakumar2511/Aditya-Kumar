@@ -93,7 +93,7 @@ const HeroSection = () => {
           {[
             {
               icon: <Code className="text-orange-500" size={24} />,
-              value: "12+",
+              value: "15+",
               label: "Projects Completed",
             },
             {

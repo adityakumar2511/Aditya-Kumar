@@ -13,34 +13,101 @@ import bebeyondLandingPageImg from "../assets/ProjectsImg/bebeyondLandingPage.pn
 import AgarwalBagHouseImg from "../assets/ProjectsImg/agarwalBagHouse.png";
 import HiProBagsImg from "../assets/ProjectsImg/hiProBags.png";
 import madhuRekhaBillingSoftwareImg from "../assets/ProjectsImg/madhuRekhaBillingSoftware.png";
+import emsImg from "../assets/ProjectsImg/ems.png";
+import ubermsImg from "../assets/ProjectsImg/uberms.png";
+import royalRajasthanWeddingImg from "../assets/ProjectsImg/royalRajasthanWedding.png";
+import provolPromotionsImg from "../assets/ProjectsImg/provolPromotions.png";
+
 const projectsData = [
+
+
+  // Employee Management System Project
+  {
+    category: "Full Stack",
+    title: "Employee Management System",
+    image: emsImg,
+    description: "EMS Pro is an enterprise-grade Employee Management System built with the MERN Stack. It features GPS-based geofenced attendance tracking, dynamic salary builder with auto LOP calculation, leave management with approval workflow, task assignment, real-time Firebase dashboard, and PDF/Excel report generation. Separate role-based dashboards for Admin and Employee with PWA support. Demo credentials available in the Frontend GitHub Repository README File.",
+    techStack: ["React.js", "Next.js", "Node.js", "Express", "PostgreSQL", "Firebase", "Tailwind", "Framer Motion", "Vercel"],
+    github: "https://github.com/adityakumar2511/Employee-Management-System-Frontend",
+    github2: "https://github.com/adityakumar2511/Employee-Management-System-Backend",
+    live: "https://employee-management-system-2511.vercel.app/",
+  },
 
   // Madhu Rekha Billing Software Project
   {
-    category: "Mern Stack",
+    category: "Full Stack",
     title: "Madhu Rekha Billing Software",
     image: madhuRekhaBillingSoftwareImg,
     description:
       "Madhu Rekha Billing Software is a responsive web-based billing and invoicing application built with modern frontend technologies. It allows users to generate invoices, manage billing items, and track customer details efficiently. Designed with an intuitive user interface, the app improves billing accuracy and workflow speed. The project is deployed on Vercel for fast performance and seamless access across devices.",
     techStack: ["React", "Vite", "Tailwind", "Node", "Express", "Firebase", "SheetIntegration"],
     github: "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
+    github2: "https://github.com/adityakumar2511/Madhu-Rekha-Billing-Software-Frontend",
     live: "https://madhu-rekha-billing-software-fronte.vercel.app/",
   },
 
 
-    // SkyPro Aviation Website Project
+  // SkyPro Aviation Website Project
   {
-    category: "WordPress",
+    category: "Full Stack",
     title: "SkyPro Aviation Website",
     image: skyproImg,
     description:
-      "SkyPro Aviation Website is a professional aviation training academy site that highlights pilot training programs, DGCA ground classes, license conversion services, and aviation guidance. The responsive layout and structured menus help visitors explore courses, learn about the institute, and contact the academy easily to start pilot career preparation.",
-    techStack: ["WordPress", "Elementor", "Contact Form 7", "HTML", "CSS"],
-    github: "#",
+      "SkyPro Aviation Website is a professional aviation training academy site built on WordPress, highlighting pilot training programs, DGCA ground classes, and license conversion services. The Admission Form and Recency Form are built as separate Full Stack applications with database integration for managing student submissions and recency records efficiently.",
+    techStack: ["WordPress", "Elementor", "Contact Form 7", "React", "Node.js", "Express", "Firebase", "Tailwind", "Google Sheets API"],
     live: "https://skyproaviation.org/",
   },
 
 
+  //CSSCP Website Project
+  {
+    category: "WordPress",
+    title: "CSSCP Website",
+    image: CSSCPImg,
+    description:
+      "Chandra Shekhar Singh College of Pharmacy Website is an educational institution site that showcases academic programs, campus information, and admission details for pharmacy courses. Built with a structured layout, it provides clear navigation for visitors to explore courses, faculty, facilities, and contact information.",
+    techStack: ["WordPress", "Elementor", "WP Forms", "ACF", "HTML", "CSS"],
+    github: "#",
+    live: "https://csscp.in/",
+  },
+
+  // Uberms Project
+  {
+    category: "WordPress",
+    title: "Uberms Website",
+    image: ubermsImg,
+    description:
+      "Uberms is a professional WordPress-based website built with a clean and responsive layout. It showcases the brand's services and offerings with structured sections, intuitive navigation, and clear calls-to-action to help visitors explore and connect with the business easily.",
+    techStack: ["WordPress", "Elementor", "WooCommerce", "WP Forms", "HTML", "CSS"],
+    github: "#",
+    live: "https://uberms.com/",
+  },
+
+
+  // Royal Rajasthan Wedding Project
+  {
+    category: "WordPress",
+    title: "Royal Rajasthan Wedding",
+    image: royalRajasthanWeddingImg,
+    description:
+      "Royal Rajasthan Wedding is an elegant WordPress-based wedding planning website that showcases venues, services, and wedding packages. Designed with a rich visual layout, it helps couples explore offerings and connect with the team for their dream Rajasthani wedding experience.",
+    techStack: ["WordPress", "Elementor", "WP Forms", "Social Media Feed", "HTML", "CSS"],
+    github: "#",
+    live: "https://royalrajasthanwedding.co.in/",
+  },
+
+  // BeBeyond Digital Shopify Landing Page Project
+  {
+    category: "Landing Page",
+    title: "BeBeyond Digital Solutions",
+    image: bebeyondLandingPageImg,
+    description:
+      "BeBeyond Digital Shopify Landing Page is a modern, responsive landing page designed to promote Shopify services. It showcases core offerings, client solutions, and calls-to-action with a clean layout and engaging visuals. The page guides visitors through value propositions and encourages lead generation with clear buttons and structured content.",
+    techStack: ["React", "vite", "Tailwind CSS", "Framer Motion", "SheetIntegration"],
+    github: "#",
+    live: "https://shopify.bebeyond.digital/",
+  },
+  
   // Agarwal Bag House Project
   {
     category: "WordPress",
@@ -65,31 +132,7 @@ const projectsData = [
     live: "https://hiprobags.com/",
   },
 
-  // BeBeyond Digital Shopify Landing Page Project
-  {
-    category: "Landing Page",
-    title: "BeBeyond Digital Solutions",
-    image: bebeyondLandingPageImg,
-    description:
-      "BeBeyond Digital Shopify Landing Page is a modern, responsive landing page designed to promote Shopify services. It showcases core offerings, client solutions, and calls-to-action with a clean layout and engaging visuals. The page guides visitors through value propositions and encourages lead generation with clear buttons and structured content.",
-    techStack: ["React", "vite", "Tailwind CSS", "Framer Motion", "SheetIntegration"],
-    github: "#",
-    live: "https://shopify.bebeyond.digital/",
-  },
-
-
-
-  //CSSCP Website Project
-  {
-    category: "WordPress",
-    title: "CSSCP Website",
-    image: CSSCPImg,
-    description:
-      "Chandra Shekhar Singh College of Pharmacy Website is an educational institution site that showcases academic programs, campus information, and admission details for pharmacy courses. Built with a structured layout, it provides clear navigation for visitors to explore courses, faculty, facilities, and contact information.",
-    techStack: ["WordPress", "Elementor", "WP Forms", "ACF", "HTML", "CSS"],
-    github: "#",
-    live: "https://csscp.in/",
-  },
+  
 
   // IBrand Solutions Project
   {
@@ -103,6 +146,7 @@ const projectsData = [
     live: "https://ibrand.solutions/",
   },
 
+
   // Amber Website Project
   {
     category: "WordPress",
@@ -112,9 +156,20 @@ const projectsData = [
       "Amber Events Website is a responsive WordPress-based website designed to showcase event services, café, catering, and guest house offerings. It features a visually rich layout, structured service sections, and user-friendly navigation to help visitors explore services and contact the business easily.",
     techStack: ["WordPress", "Elementor", "WP Forms", "HTML", "CSS"],
     github: "#",
-    live: "https://springgreen-quail-699876.hostingersite.com/",
+    live: "https://ambercafe.in/",
   },
 
+  // Provol Promotions Project
+  {
+    category: "React website",
+    title: "Provol Promotions",
+    image: provolPromotionsImg,
+    description:
+      "Provol Promotions is a modern React-based website designed to showcase promotional services and brand solutions. Built with a responsive layout and smooth user experience, it highlights the agency's offerings, portfolio, and contact information to drive engagement and lead generation.",
+    techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Vercel"],
+    github: "https://github.com/adityakumar2511/ProVol-Promotions",
+    live: "https://provolpromotions.com/",
+  },
 
   // Help People to Save People Trust Project
   {
@@ -143,7 +198,7 @@ const projectsData = [
 
   // Sarkari Yojana Web Project
   {
-    category: "React",
+    category: "HTML/CSS/JS",
     title: "Sarkari Yojana Web",
     image: sarkariYojanaWebImg,
     description:
@@ -200,6 +255,6 @@ const projectsData = [
     github: "https://github.com/adityakumar2511/Word-Counter",
     live: "https://adityakumar2511.github.io/Word-Counter/",
   },
-]; 
+];
 
 export default projectsData;

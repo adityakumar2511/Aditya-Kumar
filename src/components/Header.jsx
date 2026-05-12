@@ -8,7 +8,7 @@ const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/#home", id: "home" },
+    { name: "Home", href: "/", id: "home" },
     { name: "About", href: "/#about", id: "about" },
     { name: "Skills", href: "/#skills", id: "skills" },
     { name: "Projects", href: "/#projects", id: "projects" },
@@ -23,7 +23,7 @@ const Navbar = ({ activeSection }) => {
 
         {/* Logo */}
         <a
-          href="#home"
+          href="/"
           className="text-xl font-bold tracking-tight text-white transition-all duration-300 hover:text-orange-500 hover:scale-105"
         >
           Aditya Kumar
