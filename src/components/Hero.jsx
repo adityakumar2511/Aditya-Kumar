@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import ResumePDF from "../assets/AdityaCV.pdf";
-import profileImage from "../assets/myimg.jpg";
+import profileImage from "../assets/myimg.png";
 const Hero = () => {
   const roles = [
     "Frontend Developer",
